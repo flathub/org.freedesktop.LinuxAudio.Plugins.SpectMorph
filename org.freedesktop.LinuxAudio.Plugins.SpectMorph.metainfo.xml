@@ -22,10 +22,39 @@
     <project_license>LGPL-2.1</project_license>
     <metadata_license>CC0-1.0</metadata_license>
     <update_contact>_hub_AT_figuiere.net_</update_contact>
+    <developer_name>SpectMorph Developers</developer_name>
     <url type="homepage">https://www.spectmorph.org/</url>
     <url type="bugtracker">https://github.com/swesterfeld/spectmorph/issues/</url>
     <url type="vcs-browser">https://github.com/swesterfeld/spectmorph/</url>
     <releases>
-        <release version="0.6.1" date="2023-11-01" />
+      <release version="1.0.0-beta2" date="2024-07-02">
+        <description>
+          <p>New Features</p>
+          <ul>
+            <li>WavSource: support two formant preserving algorithms for repitching vocals.</li>
+            <li>New operators:</li>
+            <li>KeyTrack - can be used to combine instruments by note range.</li>
+            <li>Envelope - to generate arbitary modulation envelopes.</li>
+            <li>User defined curve editor for KeyTrack, Envelope and LFO.</li>
+            <li>Add presets using the new operators:</li>
+            <li>KeyTrack Choir Ah/Oh</li>
+            <li>StringBrass Fusion</li>
+            <li>JACK CC values are now interpreted per channel (allows polyphonic modulation).</li>
+            <li>Support double click to reset properties to default value.</li>
+          </ul>
+          <p>Fixes</p>
+          <ul>
+            <li>Apply midi channel bend to new voices.</li>
+            <li>Make portamento affect filter cutoff key tracking.</li>
+            <li>Fix problems with WavSource paths stored by LV2 plugin (make Ardour archives work).</li>
+            <li>Fix getting the initial click events / focus plugin UI on macOS under Bitwig.</li>
+            <li>Fix invalid access to past last vector element (#24).</li>
+            <li>Make PandaResampler work without problems in ASAN builds.</li>
+            <li>Refactor leak debugger to fix possible crashes caused by global destructors.</li>
+            <li>Do not ship sample data in "1 Instrument WavSource" prese.</li>
+          </ul>
+        </description>
+      </release>
+      <release version="0.6.1" date="2023-11-01" />
     </releases>
 </component>
