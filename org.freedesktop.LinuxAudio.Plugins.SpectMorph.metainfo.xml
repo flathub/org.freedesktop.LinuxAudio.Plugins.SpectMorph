@@ -27,6 +27,7 @@
     <url type="bugtracker">https://github.com/swesterfeld/spectmorph/issues/</url>
     <url type="vcs-browser">https://github.com/swesterfeld/spectmorph/</url>
     <releases>
+      <release version="1.0.0-beta3" date="2026-01-10" />
       <release version="1.0.0-beta2" date="2024-07-02">
         <description>
           <p>New Features</p>
