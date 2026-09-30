@@ -47,13 +47,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/swesterfeld/spectmorph/releases/download/1.0.0-beta2/spectmorph-1.0.0-beta2.tar.bz2",
-                    "sha256": "fdc6a8e7a7e9962557031ea39c25530537dab3eb430c9cd640da347bd68a3ef0"
+                    "url": "https://github.com/swesterfeld/spectmorph/releases/download/1.0.0-beta3/spectmorph-1.0.0-beta3.tar.bz2",
+                    "sha256": "3d6efe2ebb84a6cf813bb7ebcd574f435058116dbeaeee431cfd8a0f9f0d5c35"
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/swesterfeld/spectmorph-instruments/releases/download/1.0.0-beta2/spectmorph-instruments-1.0.0-beta2.tar.xz",
-                    "sha256": "d7ccc11eb414380d683e0b60f52c970382916c06309fd9b7210f1aea05f7962e",
+                    "url": "https://github.com/swesterfeld/spectmorph-instruments/releases/download/1.0.0-beta3/spectmorph-instruments-1.0.0-beta3.tar.xz",
+                    "sha256": "63c97dbeb71dc4180b2cfcaf45174d1a50caec6135564511755dbfd3cf737bb7",
                     "dest": "data"
                 },
                 {
