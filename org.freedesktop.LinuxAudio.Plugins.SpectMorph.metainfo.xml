@@ -27,7 +27,53 @@
     <url type="bugtracker">https://github.com/swesterfeld/spectmorph/issues/</url>
     <url type="vcs-browser">https://github.com/swesterfeld/spectmorph/</url>
     <releases>
-      <release version="1.0.0-beta3" date="2026-01-10" />
+      <release version="1.0.0-beta3" date="2026-01-10">
+        <description>
+          <p>New Features</p>
+          <ul>
+            <li>Implement pitch detection algorithm for instrument
+            editor and smenc (#31).</li>
+            <li>Support mp3 format for static plugins and builds with
+            new libsndfile.</li>
+          </ul>
+          <p>Instrument Updates</p>
+          <ul>
+            <li>Trumpet, French Horn: ping pong loop, better
+            tuning</li>
+            <li>Bass Trombone: ping pong loop, volume normalization,
+            tuning</li>
+            <li>Alto Saxophone: ping pong loop</li>
+          </ul>
+          <p>Reduce Memory Usage after Unload</p>
+          <ul>
+            <li>Avoid global constructors / destructors.</li>
+            <li>Use our own TextRenderer instead of cairo to be able
+            to free font cache.</li>
+            <li>Ship necessary fonts on macOS for TextRenderer.</li>
+            <li>Free various tables and other bits of static data when
+            unloading.</li>
+          </ul>
+          <p>Fixes</p>
+          <ul>
+            <li>Don't crash on invalid utf8 during conversion (use
+            replacement char).</li>
+            <li>Fix crash caused by multiple threads modifying control
+            events.</li>
+            <li>Fix CLAP's get factory implementation (#30).</li>
+            <li>Various ASAN / UBSAN fixes.</li>
+            <li>Fix RTSAN issue: make FFT realtime safe.</li>
+            <li>Avoid allocating memory in RT thread if events need to
+            be sorted.</li>
+            <li>Fix (unlikely) LineEdit crash.</li>
+            <li>Validate input for smenc -m and other utils where an
+            integer is expected (#31).</li>
+            <li>Fix smooth tune performance for long input files.</li>
+            <li>Build system updates.</li>
+            <li>Convert manpages to markdown.</li>
+            <li>Documentation updates.</li>
+          </ul>
+        </description>
+      </release>
       <release version="1.0.0-beta2" date="2024-07-02">
         <description>
           <p>New Features</p>
